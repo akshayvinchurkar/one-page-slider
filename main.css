@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-size: 10px;
+}
+
+@media (max-width: 600px) {
+	html,
+	body {
+		font-size: 6px;
+	}
+}
+
+body {
+	font-family: 'Roboto', monospace;
+  	background: linear-gradient(to bottom left, #ff1a50, #ff7830);
+	text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 600px) {
+	.cardslider-cards {
+		width: 80%;
+	}
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+.my-slider {
+	margin-top: 10px;
+}
+
+.cardslider__direction-nav{
+	top: 280px;
+	float: right;
+	right: 150px;
+	position: relative;
+	border-radius: 70px;
+	transform: rotate(-180deg);
+}
+.cardslider__nav-next, .cardslider__nav-prev{
+	background: #dbdada;
+}
+.center{
+	text-align: center;
+	width: 80%;
+	height: auto;
+	padding: 30px;
+	border: 7px solid black;
+	margin: 0px auto;
+	margin-top: 140px;
+}
+.center h1 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 50px;
+	color: #fc4e18;
+	line-height: 40px;
+}
+
+.center span {
+	font-size: 30px;
+	color: #333;
+}
+
+
+@media (max-width: 600px) {
+	.center {
+		width: 100%;
+	}
+	.center h1, span{
+		font-size: 14px;
+	}
+}
